@@ -79,7 +79,12 @@ class _MovieListScreenState extends State<MovieListScreen> {
           Movie movie = movieList[index];
 
           return ListTile(
-            leading: Image.network(movie.poster),
+            leading: Image.network(
+                movie.poster,
+              height: 400,
+              width: 50,
+              fit: BoxFit.fill,
+            ),
             title: Text(movie.title),
             subtitle: Text(movie.year),
             trailing: Text(movie.type),

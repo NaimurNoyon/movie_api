@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_api/movie_list.dart';
 import 'package:movie_api/movie_screen.dart';
+import 'package:movie_api/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MovieListScreen(),
+      home: SearchbarAnimationExample(),
     );
   }
 }
